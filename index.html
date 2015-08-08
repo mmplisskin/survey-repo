@@ -14,13 +14,12 @@
             <h1> Freelancer Survey </h1>
           </div>
           <div class="row">
-            <p class="flow-text">&nbsp&nbsp&nbsp&nbsp&nbsp Hello, We are web developers building a tool for file transfer. As freelancers we have used most of the services availiable but have recently found them to not suit our needs. We appreciate you taking the time to complete this survey and can guarantee some free early access and service in exchange for your responses. However, our Service will be very affordable anyways :) </p>
+            <p class="flow-text">&nbsp&nbsp&nbsp&nbsp&nbsp Hello, We are web developers building a tool for file transfer. As freelancers we all have used most of the services availiable but we seek to improve upon what is available. We appreciate you taking the time to complete this survey and can guarantee free early access and service in exchange for your responses. However, our Service will be very affordable anyways :) </p>
               <br>
-            <h6> Please include your email so we can contact you to test out the beta. We will never use this email to spam you. </h6>
-
+            <h6> Please include your <b>valid</b> email so we can contact you to test out the beta. We will never use this email to spam you. </h6>
           </div>
           <br>
-          <div class="row">
+
              <form class="col s12">
                <div class="row">
 
@@ -34,19 +33,238 @@
                    <label for="last_name">Last Name</label>
                  </div>
                </div>
+              <br>
+              <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email" data-error="wrong" data-success="right">Email</label>
+              </div>
+              <br>
+              <div class="row">
+                <label>Primary Field of Work</label>
+                 <div class="input-field col s12">
+                    <select class="browser-default">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="Art/photography">Art / Photography</option>
+                      <option value="Film">Film</option>
+                      <option value="Music">Music</option>
+                      <option value="Other/Bussiness">Other / Bussiness</option>
+                    </select>
+                  </div>
+              </div>
+              <br>
+              <div class="row">
+                <label>How Often do you upload files?</label>
+                 <div class="input-field col s12">
+                    <select class="browser-default">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="many times a day">many times a day</option>
+                      <option value="once a day">once a day</option>
+                      <option value="once a week">once a week</option>
+                      <option value="2-3 times a week">2-3 times a week</option>
+                      <option value="2-3 times a month">2-3 times a month</option>
+                    </select>
+                  </div>
+              </div>
+
+              <div class="row">
+                <label>Do you Email Clients When Files Are Upload</label>
+                 <div class="input-field col s12">
+                    <select class="browser-default">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="No the file upload service does this">No the file upload service does this</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No It is for personal use">No It is for personal use</option>
+                      <option value="Yes to send the client a link">Yes to send the client a link</option>
+                      <option value="Yes To include notes">Yes To include notes</option>
+                    </select>
+                  </div>
+              </div>
+              <br>
+              <div class="row">
+                <label>Services You Currently use</label>
+                <p>
+                  <input type="checkbox" id="Box.net" />
+                  <label for="Box.net">Box.net</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="Dropbox" />
+                  <label for="Dropbox">Dropbox</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="Google Drive" />
+                  <label for="Google Drive">Google Drive</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="iCloud" />
+                  <label for="icloud">iCloud</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="Mediafire" />
+                  <label for="Mediafire">Mediafire</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="Mega" />
+                  <label for="Mega">Mega</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="Soundcloud" />
+                  <label for="Soundcloud">Soundcloud (just for transfer not for playback)</label>
+                </p>
+
+                <p>
+                  <input type="checkbox" id="WeTransfer" />
+                  <label for="WeTransfer">WeTransfer</label>
+                </p>
+              </div>
+
+              <br>
+              <div class="row">
+                <h6> What is most important to your decision? ( <i> 5 is most important! </i>)</h6>
+              </div>
+
+              <div class="row">
+                <label>Upload Speed</label>
+                 <div class="input-field col s12">
+                    <select class="browser-default">
+                      <option value="" disabled selected>Choose priority</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+              </div>
+              <br>
+
+              <div class="row">
+                <label>File size Allowed</label>
+                 <div class="input-field col s12">
+                    <select class="browser-default">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+              </div>
+              <br>
+
+              <div class="row">
+                <label>Notifications to clients and yourself (i.e. emails client)</label>
+                 <div class="input-field col s12">
+                    <select class="browser-default">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+              </div>
+              <br>
+
+              <div class="row">
+                <label>Price</label>
+                 <div class="input-field col s12">
+                    <select class="browser-default">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+              </div>
+              <br>
+
+              <div class="row">
+                <label>How long the files are availiable for</label>
+                 <div class="input-field col s12">
+                    <select class="browser-default">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+              </div>
+              <br>
+
+
+
+
+
+
+
+
+              <div class="row">
+                <label>Your Favorite Transfer Service</label>
+                 <div class="input-field col s12">
+                    <select class="browser-default">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="Box">Box</option>
+                      <option value="Dropbox">Dropbox</option>
+                      <option value="Google Drive">Google Drive</option>
+                      <option value="iCloud">iCloud</option>
+                      <option value="Mediafire">Mediafire</option>
+                      <option value="Mega">Mega</option>
+                      <option value="Soundcloud">Soundcloud</option>
+                      <option value="WeTransfer">WeTransfer</option>
+                      <option value="Mega">Other</option>
+                    </select>
+                  </div>
+              </div>
+              <br>
+
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Why is the above your favorite?</label>
+                  </div>
+                </div>
+
+              <br>
+              <label><h5>How Much are you willing to pay for a Service that fits your needs?</h5></label>
+              <br>
+                <p class="range-field">
+                    <label for="low-price">Minimum</label>
+                    <input type="range" id="test5" min="0" max="30" />
+                </p>
+                <br>
+                <p class="range-field">
+                    <label for="low-price">Maximum</label>
+                    <input type="range" id="test5" min="0" max="30" />
+                </p>
 
                <div class="row">
                  <div class="input-field col s12">
                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                   <label for="textarea1">Textarea</label>
+                   <label for="textarea1">Anything Else?</label>
                  </div>
                </div>
+
+
+
+
                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                </button>
              </form>
-      </div>
 
+        </div>
+
+    <script>
+    $(document).ready(function() {
+    $('select').material_select();
+  });
+    </script>
       <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+      <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
   </body>
 </html>
