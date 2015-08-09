@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <title>File Info</title>
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
 
   </head>
   <body>
+        <script type="text/javascript" src="//l2.io/ip.js?var=userip"></script>
         <div class="container">
           <div class="row">
             <h1> Freelancer Survey </h1>
           </div>
           <div class="row">
-            <p class="flow-text center">Hello, We are web developers building a tool for file transfer. As freelancers we all have used many services, we seek to improve upon what is available. Thank You for taking the time to complete this survey, we can guarantee free early access in exchange for your responses. However, our service will be very affordable anyways :) </p>
+            <p class="flow-text">Hello, We are web developers building a tool for file transfer. As freelancers we all have used many services. We seek to improve upon what is available. Thank You for taking the time to complete this survey, we can guarantee free early access in exchange for your responses. However, our service will be very affordable anyways :) </p>
               <br>
             <h6> <i> Please include your <b>valid</b> email so we can contact you to test out the beta. We will never use this email to spam you. </i></h6>
           </div>
@@ -24,25 +25,27 @@
                <div class="row">
 
                  <div class="input-field col s6">
-                   <input id="first_name" name="firstName" type="text" class="validate">
-                   <label for="first_name" name="firstName">First Name</label>
+                   <input id="first_name" name="FirstName" type="text" class="validate">
+                   <label for="first_name">First Name</label>
                  </div>
 
                  <div class="input-field col s6">
                    <input id="last_name" name="lastName" type="text" class="validate">
-                   <label for="last_name" name="lastName">Last Name</label>
+                   <label for="last_name">Last Name</label>
                  </div>
                </div>
-              <br>
-              <div class="input-field col s12">
-                  <input required id="email" type="email" class="validate" name="email">
-                  <label for="email" data-error="wrong" data-success="right" name="email">Email</label>
+
+              <div class="row">
+                <div class="input-field col s12">
+                      <input id="email" type="email" class="validate" name="Email">
+                      <label for="email">Email</label>
+                    </div>
               </div>
               <br>
               <div class="row">
                 <label>Primary Field Of Work</label>
                  <div class="input-field col s12">
-                    <select required class="browser-default" name="work">
+                    <select required class="browser-default" name="Work">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="Art/photography">Art / Photography</option>
                       <option value="Film">Film</option>
@@ -57,7 +60,7 @@
               <div class="row">
                 <label>How Often Do You Upload Files?</label>
                  <div class="input-field col s12">
-                    <select required class="browser-default" name="howOften">
+                    <select required class="browser-default" name="Usage">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="many times a day">many times a day</option>
                       <option value="once a day">once a day</option>
@@ -71,7 +74,7 @@
               <div class="row">
                 <label>Do you Email Clients When Files Are Uploaded</label>
                  <div class="input-field col s12">
-                    <select required class="browser-default" name="emailClients">
+                    <select required class="browser-default" name="EmailClients">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="No the file upload service does this">No,the file upload service does this</option>
                       <option value="No It is for personal use">No, It is for personal use</option>
@@ -92,39 +95,39 @@
                   <label for="Dropbox">Dropbox</label>
                 </p>
                 <p>
-                  <input type="checkbox" id="Google Drive" name="drive"/>
-                  <label for="Google Drive">Google Drive</label>
+                  <input type="checkbox" id="GoogleDrive" name="drive"/>
+                  <label for="useGoogleDrive">Google Drive</label>
                 </p>
                 <p>
                   <input type="checkbox" id="Mega" name="highTail" />
-                  <label for="Mega">High Tail</label>
+                  <label for="useHighTail">High Tail</label>
                 </p>
                 <p>
                   <input type="checkbox" id="iCloud" name="icloud" />
-                  <label for="icloud">iCloud</label>
+                  <label for="useicloud">iCloud</label>
                 </p>
                 <p>
                   <input type="checkbox" id="Mediafire" name="mediafire"/>
-                  <label for="Mediafire">Mediafire</label>
+                  <label for="useMediafire">Mediafire</label>
                 </p>
                 <p>
                   <input type="checkbox" id="Mega" name="mega" />
-                  <label for="Mega">Mega</label>
+                  <label for="useMega">Mega</label>
                 </p>
 
                 <p>
                   <input type="checkbox" id="Soundcloud" name="soundcloud" />
-                  <label for="Soundcloud">Soundcloud (just for transfer not for playback)</label>
+                  <label for="useSoundcloud">Soundcloud (just for transfer not for playback)</label>
                 </p>
 
                 <p>
                   <input type="checkbox" id="WeTransfer" name="weTransfer" />
-                  <label for="WeTransfer">WeTransfer</label>
+                  <label for="useWeTransfer">WeTransfer</label>
                 </p>
 
                 <p>
                   <input type="checkbox" id="FTP" name="FTP" />
-                  <label for="FTP">FTP / Other</label>
+                  <label for="useFTP">FTP / Other</label>
                 </p>
               </div>
 
@@ -137,7 +140,7 @@
               <div class="row">
                 <label>Upload Speed</label>
                  <div class="input-field col s12">
-                    <select required class="browser-default" name="uploadSpeed">
+                    <select required class="browser-default" name="UploadSpeedImportance">
                       <option value="" disabled selected>Choose priority</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -152,7 +155,7 @@
               <div class="row">
                 <label>File size Allowed</label>
                  <div class="input-field col s12">
-                    <select required class="browser-default" name="fileSize">
+                    <select required class="browser-default" name="FileSizeImportance">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -167,7 +170,7 @@
               <div class="row">
                 <label>Notifications To Clients And Yourself (i.e. Emails Client)</label>
                  <div class="input-field col s12">
-                    <select required class="browser-default" name="emailNotifications">
+                    <select required class="browser-default" name="emailNotificationsImportance">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -182,7 +185,7 @@
               <div class="row">
                 <label>Price</label>
                  <div class="input-field col s12">
-                    <select required class="browser-default">
+                    <select required class="browser-default" name="PriceImportance">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -197,7 +200,7 @@
               <div class="row">
                 <label>Length Of Time The Files Are Availiable</label>
                  <div class="input-field col s12">
-                    <select required class="browser-default" name="file persistence">
+                    <select required class="browser-default" name="FilePersistenceImportance">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -212,7 +215,7 @@
               <div class="row">
                 <label>Having A Desktop Application</label>
                  <div class="input-field col s12">
-                    <select required class="browser-default" name="desktopAPP">
+                    <select required class="browser-default" name="DesktopAPPImportance">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -228,12 +231,12 @@
               <div class="row">
                 <label>Your Favorite Transfer Service</label>
                  <div class="input-field col s12">
-                    <select required class="browser-default" name="favoriteService">
+                    <select required class="browser-default" name="FavoriteService">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="Box">Box</option>
                       <option value="Dropbox">Dropbox</option>
                       <option value="FTP">FTP</option>
-                      <option value="Google Drive">Google Drive</option>
+                      <option value="Drive">Google Drive</option>
                       <option value="iCloud">iCloud</option>
                       <option value="Mediafire">Mediafire</option>
                       <option value="Mega">Mega</option>
@@ -258,7 +261,7 @@
               <div class="row">
 
                  <div class="input-field col s12">
-                    <select required class="browser-default" name="favoriteService">
+                    <select required class="browser-default" name="PriceRange">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="free">free</option>
                       <option value="0 - $3">0 - $3</option>
@@ -280,24 +283,43 @@
 
 
                <input id="date" name="date" style="display:none">
+               <input id="ip" name="ip" style="display:none">
 
-           <script type="text/javascript">
-             document.getElementById('date').value = Date();
-           </script>
+
 
                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                </button>
              </form>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
         </div>
 
 
     <script>
     $(document).ready(function() {
+
     $('select').material_select();
+    document.getElementById('date').value = Date();
+    document.getElementById('ip').value = userip
+    // document.write("Your IP is :", userip);
   });
+
+
+
+
     </script>
-      <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+      var userip;
+    </script>
+
+
+
+    <script type="text/javascript">
+
+    </script>
+
+
+
   </body>
 </html>
