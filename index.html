@@ -15,7 +15,7 @@
             <h1> Freelancer Survey </h1>
           </div>
           <div class="row">
-            <p class="flow-text">Hello, We are web developers building a tool for file transfer. As freelancers we all have used many services. We seek to improve upon what is available. Thank You for taking the time to complete this survey, we can guarantee free early access in exchange for your responses. However, our service will be very affordable anyways :) </p>
+            <p class="flow-text">Hello, we are web developers building a tool for file transfer. As freelancers we all have used many services. We seek to improve upon what is available. Thank you for taking the time to complete this survey, we can guarantee free early access in exchange for your responses. However, our service will always be very affordable. :) </p>
               <br>
             <h6> <i> Please include your <b>valid</b> email so we can contact you to test out the beta. We will never use this email to spam you. </i></h6>
           </div>
@@ -37,7 +37,7 @@
 
               <div class="row">
                 <div class="input-field col s12">
-                      <input id="email" type="email" class="validate" name="Email">
+                      <input id="email" type="email" class="validate" name="Email" required="true">
                       <label for="email">Email</label>
                     </div>
               </div>
@@ -53,10 +53,59 @@
                       <option value="Other/Bussiness">Legal</option>
                       <option value="Music">Music</option>
                       <option value="Other/Bussiness">Other / Business</option>
+                      <option value="Web/Coding">Web / Coding</option>
                     </select>
                   </div>
               </div>
               <br>
+              <div class="row">
+                <label>Services You Currently Use</label>
+                <p>
+                  <input type="checkbox" id="Box.net" name="usebox" />
+                  <label for="Box.net">Box.net</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="Dropbox" name="usedropbox" />
+                  <label for="Dropbox">Dropbox</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="GoogleDrive" name="usedrive"/>
+                  <label for="GoogleDrive">Google Drive</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="HighTail" name="usehighTail" />
+                  <label for="HighTail">High Tail</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="iCloud" name="useiCloud" />
+                  <label for="iCloud">iCloud</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="Mediafire" name="useMediafire"/>
+                  <label for="Mediafire">Mediafire</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="Mega" name="usemega" />
+                  <label for="Mega">Mega</label>
+                </p>
+
+                <p>
+                  <input type="checkbox" id="Soundcloud" name="useSoundcloud" />
+                  <label for="Soundcloud">Soundcloud (just for transfer not for playback)</label>
+                </p>
+
+                <p>
+                  <input type="checkbox" id="WeTransfer" name="useweTransfer" />
+                  <label for="WeTransfer">WeTransfer</label>
+                </p>
+
+                <p>
+                  <input type="checkbox" id="FTP" name="useFTP" />
+                  <label for="FTP">FTP / Other</label>
+                </p>
+              </div>
+              <br>
+
               <div class="row">
                 <label>How Often Do You Upload Files?</label>
                  <div class="input-field col s12">
@@ -83,53 +132,7 @@
                     </select>
                   </div>
               </div>
-              <br>
-              <div class="row">
-                <label>Services You Currently Use</label>
-                <p>
-                  <input type="checkbox" id="Box.net" name="box" />
-                  <label for="Box.net">Box.net</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="Dropbox" name="dropbox" />
-                  <label for="Dropbox">Dropbox</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="GoogleDrive" name="drive"/>
-                  <label for="useGoogleDrive">Google Drive</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="Mega" name="highTail" />
-                  <label for="useHighTail">High Tail</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="iCloud" name="icloud" />
-                  <label for="useicloud">iCloud</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="Mediafire" name="mediafire"/>
-                  <label for="useMediafire">Mediafire</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="Mega" name="mega" />
-                  <label for="useMega">Mega</label>
-                </p>
 
-                <p>
-                  <input type="checkbox" id="Soundcloud" name="soundcloud" />
-                  <label for="useSoundcloud">Soundcloud (just for transfer not for playback)</label>
-                </p>
-
-                <p>
-                  <input type="checkbox" id="WeTransfer" name="weTransfer" />
-                  <label for="useWeTransfer">WeTransfer</label>
-                </p>
-
-                <p>
-                  <input type="checkbox" id="FTP" name="FTP" />
-                  <label for="useFTP">FTP / Other</label>
-                </p>
-              </div>
 
               <br>
               <div class="row">
@@ -246,6 +249,25 @@
                     </select>
                   </div>
               </div>
+
+              <br>
+              <div class="row">
+                <label>Average file size you send</label>
+                 <div class="input-field col s12">
+                    <select required class="browser-default" name="fileSize">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="0 - 20mb">0 - 20mb (plain text, pdf files, mp3's, standard res photos)</option>
+                      <option value="20mb - 100mb" >20mb - 100mb (wav files, hi res images, small video files ) </option>
+                      <option value="100mb - 1gb">100mb - 1gb (compressed file collections, video)</option>
+                      <option value="1gb - 3gb">1gb - 3gb (audio stemm, video)</option>
+                      <option value="3gb - 5gb">3gb - 5gb</option>
+                      <option value="5gb - 10gb">5gb - 10gb</option>
+                    </select>
+                  </div>
+              </div>
+
+
+
               <br>
 
                 <div class="row">
@@ -273,6 +295,8 @@
                     </select>
                   </div>
               </div>
+
+
 
                <div class="row">
                  <div class="input-field col s12">
